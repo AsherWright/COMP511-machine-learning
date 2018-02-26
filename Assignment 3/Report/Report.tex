@@ -136,14 +136,23 @@ The converted dataset for binary bag of words is included in the submitted files
 \subsubsection{Bernoulli Naive Bayes Classifier}
 The hyperparameter that was cross-validated for Bernoulli Naive Bayes was alpha, which is the additive smoothing parameter. The closer to 0 alpha is, the less smoothing. The range of alpha examined was 1E-5 to 10. Figure 1 shows the F1 measure on the validation set versus alpha. One can see that there is a clear increase and decrease at the beginning of the range. The highest validation F1 measure of 42.50\% occurred when alpha = 0.01. This led to a training F1 measure of 74.70\% and a testing F1 measure of 44.25\%.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\textwidth]{Yelp_BernoulliNB}
+\includegraphics[width=0.65\textwidth]{Yelp_BernoulliNB}
 \caption{F1 measure versus alpha for Bernoulli NB (Yelp)}
 \end{figure}
 
 \subsubsection{Decision Tree Classifier}
-For the decision tree classifier, the only hyperparameter that was cross-validated was the maximum depth of the tree. This was discussed in lecture as a good parameter to validate. The range for this parameter was between 1 and infinity (covering 12 values). The highest validation F1 measure of 39.10\% occurred when the maximum depth was 10. This corresponded to a training F1 measure of 52.87\% and a testing F1 measure of 39.40\%.
+For the decision tree classifier, the only hyperparameter that was cross-validated was the maximum depth of the tree. This was discussed in lecture as a good parameter to validate. The range for this parameter was between 1 and infinity (covering 12 values). The highest validation F1 measure of 39.10\% occurred when the maximum depth was 10. This corresponded to a training F1 measure of 52.87\% and a testing F1 measure of 39.40\%.\\
+
+\noindent
+Figure 2 shows the performance relative to the maximum depth (infinite depth is not shown). One can see the early peak, followed by steady values.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.65\textwidth]{Yelp_DT}
+\caption{F1 measure versus maximum depth for Decision Tree (Yelp)}
+\end{figure}
 
 \subsubsection{Linear SVM Classifier}
 Three hyperparameters were cross-validated for linear SVM: tolerance, maximum iterations, and C (the penalty parameter of the error term). The tolerance for stopping and the penalty are important parameters to validate. The reason for validating the maximum iterations is to reduce overfitting. Without reducing the maximum iterations, the system almost always had near 100\% training accuracy, but low testing accuracy. The ranges of the parameters was as follows:
@@ -161,7 +170,7 @@ The converted dataset for frequency bag of words is included in the submitted fi
 Since the frequency dataset is not binary, we switch to a Gaussian Naive Bayes classifier. There were no hyperparameters to tune for this classifier. The training F1 measure was 80.26\%, the validation F1 measure was 36.80\%, and the testing F1 measure was 31.00\%. 
 
 \subsubsection{Decision Tree Classifier}
-The same range of maximum depth was used as for binary bag of words. The best maximum depth was found to be 1, with a validation F1 measure of 38.50\%. This corresponded to a training F1 measure of 39.64\% and a testing F1 measure of 38.50\%.
+The same range of maximum depth was used as for binary bag of words. The best maximum depth was found to be 1, with a validation F1 measure of 38.50\%. This corresponded to a training F1 measure of 39.64\% and a testing F1 measure of 38.50\%. Again, we see an early peak in performance, similar to Figure 2 and Figure 4.
 
 \subsubsection{Linear SVM Classifier}
 Again, the same range of hyperparameters was used. The best F1 measure was 46.10\%, and occurred when tolerance = 1E-5, maximum iterations = 10, and C = 5. This corresponded to a training F1 measure of 60.84\% and a testing F1 measure of 49.55\%.
@@ -173,16 +182,16 @@ The random classifier for IMDB had a 50.48\% training F1 measure and a 49.59\% t
 \subsection{Binary Bag of words}
 
 \subsubsection{Bernoulli Naive Bayes Classifier}
-See Figure 2 for the change in performance versus alpha. The peak is clear, and one can see that, again, past a certain value, the performance steadily decreases. The highest validation F1 measure of 84.26\% occurred when alpha = 0.06. This led to a training F1 measure of 87.01\% and a testing F1 measure of 82.98\%.
+See Figure 3 for the change in performance versus alpha. The peak is clear, and one can see that, again, past a certain value, the performance steadily decreases. The highest validation F1 measure of 84.26\% occurred when alpha = 0.06. This led to a training F1 measure of 87.01\% and a testing F1 measure of 82.98\%.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{IMDB_BernoulliNB}
+\includegraphics[width=0.65\textwidth]{IMDB_BernoulliNB}
 \caption{F1 measure versus alpha for Bernoulli NB (IMDB)}
 \end{figure}
 
 \subsubsection{Decision Tree Classifier}
-The best maximum depth was found to be 20, with a validation F1 measure of 71.85\%. This corresponded to a training F1 measure of 87.55\% and a testing F1 measure of 72.40\%.
+The best maximum depth was found to be 20, with a validation F1 measure of 71.85\%. This corresponded to a training F1 measure of 87.55\% and a testing F1 measure of 72.40\%.\\
 
 \subsubsection{Linear SVM Classifier}
 The best F1 measure was 86.28\%, and occurred when tolerance = 1E-6, maximum iterations = 10, and C = 0.1. This corresponded to a training F1 measure of 98.96\% and a testing F1 measure of 84.86\%.
@@ -193,6 +202,15 @@ The training F1 measure was 86.11\%, the validation F1 measure was 76.63\%, and 
 
 \subsubsection{Decision Tree Classifier}
 The best maximum depth was found to be 10, with a validation F1 measure of 68.79\%. This corresponded to a training F1 measure of 75.56\% and a testing F1 measure of 71.08\%.
+
+\noindent
+As with the other decision tree classifiers, we see an early peak in F1 measure relative to depth. This can be seen in Figure 4.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.65\textwidth]{IMDB_DT}
+\caption{F1 measure versus maximum depth for Decision Tree (IMDB)}
+\end{figure}
 
 \subsubsection{Linear SVM Classifier}
 The best F1 measure was 86.28\%, and occurred when tolerance = 1E-6, maximum iterations = 10, and C = 9. This corresponded to a training F1 measure of 98.46\% and a testing F1 measure of 83.48\%.

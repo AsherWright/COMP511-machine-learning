@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 FEB 2018 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 FEB 2018 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -783,55 +783,76 @@ File: Yelp_BernoulliNB.png Graphic file (type png)
 
 <use Yelp_BernoulliNB.png>
 Package pdftex.def Info: Yelp_BernoulliNB.png used on input line 141.
-(pdftex.def)             Requested size: 375.80544pt x 254.5175pt.
+(pdftex.def)             Requested size: 305.33789pt x 206.79335pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 151.
+[2 <./Yelp_BernoulliNB.png>] <Yelp_DT.png, id=17, 424.58624pt x 283.0575pt>
+File: Yelp_DT.png Graphic file (type png)
+
+<use Yelp_DT.png>
+Package pdftex.def Info: Yelp_DT.png used on input line 153.
+(pdftex.def)             Requested size: 305.33789pt x 203.568pt.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 160.
+
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
- [2] [3 <./Yelp_BernoulliNB.png>] <IMDB_BernoulliNB.png, id=21, 442.65375pt x 2
-81.05pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 160.
+ [3 <./Yelp_DT.png>] <IMDB_BernoulliNB.png, id=23, 442.65375pt x 281.05pt>
 File: IMDB_BernoulliNB.png Graphic file (type png)
 
 <use IMDB_BernoulliNB.png>
-Package pdftex.def Info: IMDB_BernoulliNB.png used on input line 180.
-(pdftex.def)             Requested size: 375.80544pt x 238.61916pt.
- [4 <./IMDB_BernoulliNB.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
+Package pdftex.def Info: IMDB_BernoulliNB.png used on input line 189.
+(pdftex.def)             Requested size: 305.33789pt x 193.87323pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+[4] <IMDB_DT.png, id=27, 419.5675pt x 283.0575pt>
+File: IMDB_DT.png Graphic file (type png)
+ <use IMDB_DT.png>
+Package pdftex.def Info: IMDB_DT.png used on input line 211.
+(pdftex.def)             Requested size: 305.33789pt x 205.99533pt.
+ [5 <./IMDB_BernoulliNB.png> <./IMDB_DT.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-[5] (./Report.aux)
+[6] (./Report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5790 strings out of 493014
- 84060 string characters out of 6133351
+ 5800 strings out of 493014
+ 84208 string characters out of 6133351
  153813 words of memory out of 5000000
- 9192 multiletter control sequences out of 15000+600000
+ 9200 multiletter control sequences out of 15000+600000
  31086 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,9n,77p,667b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -839,10 +860,10 @@ Here is how much of TeX's memory you used:
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on Report.pdf (6 pages, 76628 bytes).
+Output written on Report.pdf (7 pages, 100593 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 50 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
